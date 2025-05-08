@@ -14,7 +14,7 @@ num=int(input("adivine el numero"))
 
 while num!=numeroAdivinar:
     print(numeroAdivinar)
-    if num>numeroAdivinar
+    if num>numeroAdivinar:
         print("el numero adivinar es menor")
     else:
          print("el numero adivinar es menor")
