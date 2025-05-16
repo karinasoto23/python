@@ -23,39 +23,41 @@ def division():
  except ZeroDivisionError as mal:
     print("no se puede dividir por 0", mal )
 
+def calculadora():
 
-while True:
-    print('''
-        1. suma
-        2. resta
-        3. multiplicacion
-        4. division
-        5. salir
-        ''')
-
-
-    op=int(input("seleccione una opcion"))
+    while True:
+        print('''
+            1. suma
+            2. resta
+            3. multiplicacion
+            4. division
+            5. salir
+            ''')
 
 
-
-    match op:
-        case 1: 
-            print("suma")
-            suma()
-        case 2: 
-            print("resta")
-            resta()
-        case 3: 
-            print("multiplicacion")
-            multiplicacion()
-        case 4: 
-            print("division")
-            division()
-        case 5:
-            print("saliendo")
-            break 
-        case _:
-            print("opcion no valida")
-            break
+        op=int(input("seleccione una opcion"))
 
 
+
+        match op:
+            case 1: 
+                print("suma")
+                suma()
+            case 2: 
+                print("resta")
+                resta()
+            case 3: 
+                print("multiplicacion")
+                multiplicacion()
+            case 4: 
+                print("division")
+                division()
+            case 5:
+                print("saliendo")
+                break 
+            case _:
+                print("opcion no valida")
+                break
+
+calculadora()
+    
